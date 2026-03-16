@@ -1,0 +1,5 @@
+# Source books and papers (copyrighted, not distributed)
+literature/
+
+# OS
+.DS_Store
