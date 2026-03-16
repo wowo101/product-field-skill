@@ -9,7 +9,7 @@ This plugin makes the Product Field operational in Claude Code: structured comma
 ## Installation
 
 ```bash
-git clone git@github.com:mark-jaeger/product-field-claude.git ~/.claude/product-field
+git clone git@github.com:mark-jaeger/product-field.git ~/.claude/product-field
 ln -s ~/.claude/product-field/commands ~/.claude/commands/pf
 ```
 

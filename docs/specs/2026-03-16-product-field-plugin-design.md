@@ -153,20 +153,21 @@ All files are user-editable. Commands generate content, but the user owns it. No
 
 ### Lifecycle
 
-```
-/pf:new       → canvas.md (skeleton)                    status: framing
-/pf:import    → canvas.md (partial) + questionnaire.md   status: imported
-/pf:map       → canvas.md (filling in)                   status: mapping
-/pf:audit     → canvas.md (corrected placements)         status: mapping
-/pf:map       → canvas.md (complete)                     status: mapped
-/pf:check     → check.md                                 status: checked
-/pf:find      → find.md                                  status: evaluated
-/pf:prd       → prd.md                                   status: specified
-              → (hand to engineering)                     status: in-progress
-```
+Each command produces files. `/pf:status` derives status from file existence:
 
-`/pf:status` derives status from file existence (no metadata tracking).
-`/pf:consolidate` can update canvas at any point from session insights.
+| Command | Creates / Updates | Status (derived) |
+|---|---|---|
+| `/pf:new` | `canvas.md` (skeleton) | has canvas |
+| `/pf:import` | `canvas.md` + `questionnaire.md` | has canvas + questionnaire |
+| `/pf:map` | `canvas.md` (fills in aspects) | has canvas |
+| `/pf:audit` | `canvas.md` (corrects placements) | has canvas |
+| `/pf:check` | `check.md` | has check |
+| `/pf:find` | `find.md` | has find |
+| `/pf:prd` | `prd.md` | has prd |
+
+`/pf:status` reports what exists per product (canvas, questionnaire, check, find, prd) and flags inconsistencies (e.g., prd without check). It does not track stages like "mapping" vs. "mapped" — that distinction lives in the canvas content (how many aspects are filled), not in file existence.
+
+`/pf:consolidate` can update the canvas at any point from session insights.
 
 ## Command Specifications
 
