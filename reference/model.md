@@ -44,7 +44,7 @@ The canvas is the visual layout of these axes. Each area on the canvas has a fix
 
 ## Three Layers
 
-The canvas has three rings, from the center outward.
+The canvas has three layers, from the center outward.
 
 ### Center — The Product
 
@@ -167,7 +167,15 @@ Four steps, each building on the last:
 3. **Check** — test consistency. Do the pieces fit together? Run the validation sentences.
 4. **Find** — evaluate. What's strong, what's weak? Where's the force field pushing, where is it dragging?
 
-These aren't strictly sequential — you'll loop back as you learn more. The canvas evolves.
+These build on each other, but you don't just march through them once. Each step can send you back to an earlier one — and when it does, it tells you exactly where to look:
+
+- **Check breaks a validation sentence** → go back to Map for the specific aspects in that sentence. If "enablers empower production to build solution" doesn't hold, you know to dig into ENABLERS, PRODUCTION, or solution — not start over.
+- **Check finds a relation with no evidence** → go back to Map to gather facts for that connection. An empty relation means you haven't explored how two aspects interact.
+- **Find surfaces a weakness in a corner** → go back to Map to explore that area deeper, or to Check to understand which relations are failing there.
+- **Find flags a primary fact tagged `[assumed]`** → that assumption is load-bearing. Go back to Map (or out to research) to validate it before building on it.
+- **Audit catches a misplacement** → correct it, then re-run Check, because moving a fact between aspects changes which validation sentences it participates in.
+
+The point: you never "go back and redo everything." The position of the gap on the canvas tells you exactly which aspect to revisit and which step to return to.
 
 ---
 
