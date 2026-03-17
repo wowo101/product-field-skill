@@ -1,24 +1,22 @@
 # The Product Field — Geographic Model
 
-The Product Field is a cognitive medium for product innovation. It provides a geographic model — a two-dimensional coordinate system where spatial position encodes meaning — that supports systematic exploration, validation, and evaluation of product innovations.
+The Product Field is a map of everything that matters to a product's success. It lays out the people, forces, and decisions around a product in a way that makes gaps and connections visible.
 
-This file describes the model's structure. For individual aspect definitions, see `aspects.md`. For the relational grammar and validation sentences, see `relations.md`.
+This file describes how the map works. For what goes in each area, see `aspects.md`. For how the areas connect to each other, see `relations.md`.
 
-## Conceptual Space
+## The Two Axes
 
-The Product Field's conceptual space is defined by two orthogonal dimensions derived from the canonical definition of product innovation: the creation and market introduction of new, redesigned or substantially improved products.
+Every product lives at the intersection of two tensions:
 
-### Axes
+**Inside → Outside** (horizontal) — A product starts inside an organization and has to reach users and customers on the outside. This is the journey from creation to introduction.
 
-**Introduction** (horizontal: Inside → Outside) — A product originates inside an organization and must be introduced to users and customers outside of it. This dimension captures the inside-to-outside trajectory every product follows.
+**Purpose → Implementation** (vertical) — A product exists for a reason (why) and has to be built and delivered (how). This is the journey from intent to execution.
 
-**Realization** (vertical: Purpose → Implementation) — A product exists to achieve a certain purpose for its stakeholders and is implemented to realize that purpose. This dimension captures the purpose-to-implementation trajectory.
-
-Together these axes form a finite Cartesian coordinate system with the product at the origin, midway between inside and outside, purpose and implementation.
+These two axes create four quadrants, and the product sits at the center.
 
 ### The Canvas
 
-The conceptual space is visually represented as a canvas. The center of the canvas corresponds to the coordinate system's origin. Every fact about a product innovation maps to a position on the canvas based on which aspect it belongs to.
+The canvas is the visual layout of these axes. Each area on the canvas has a fixed position based on whether it's more inside or outside, more purpose or implementation.
 
 ```
                           PURPOSE
@@ -46,141 +44,131 @@ The conceptual space is visually represented as a canvas. The center of the canv
 
 ## Three Layers
 
-The model organizes its thirteen aspects into three concentric layers, each representing a different level of abstraction.
+The canvas has three rings, from the center outward.
 
-### Center
+### Center — The Product
 
-The product itself — a physical or virtual good or service created inside an organization, introduced outside of it, and implemented to achieve a certain purpose. It sits at the origin of the coordinate system. The center is a singleton: one canvas describes one product.
+The product itself. One canvas describes one product. Everything else on the canvas exists in relation to it.
 
-### Core (Value Proposition)
+### Core — The Value Proposition
 
-The four aspects that define the product's value proposition — its specific promise of value to users and customers:
+The four aspects that define what the product promises:
 
-- **problem** (top-right of core) — what the product addresses
-- **solution** (bottom-left of core) — how the product addresses it
-- **uniqueness** (top-left of core) — what makes this product distinct
-- **alternatives** (bottom-right of core) — what exists instead
+- **problem** — what's in the way for users that this product addresses
+- **solution** — how the product addresses it
+- **uniqueness** — what makes this product different from what already exists
+- **alternatives** — what people use today instead
 
-The core zone surrounds the center on the canvas. At its core, every innovation is a promise of value.
+These sit in the inner ring, closest to the product. They are the product's promise of value.
 
-### Context
+### Context — The World Around the Product
 
-The eight aspects that represent the environment in which the product is created, realized, introduced, and used — the interacting stakeholders, objectives, and means of innovation:
+The eight aspects that make up the environment the product lives in — who's involved, what they want, and what's available:
 
-- **GOALS** (inside + purpose) — organizational objectives the product serves
-- **DRIVERS** (inside, between purpose and implementation) — people and teams inside the organization who push the product forward
-- **ENABLERS** (inside + implementation) — assets, capabilities, and know-how available to the organization
-- **PRODUCTION** (inside + implementation) — processes and systems that build the product
-- **DISTRIBUTION** (outside + implementation) — channels and mechanisms that deliver the product to customers
-- **CUSTOMERS** (outside, between purpose and implementation) — people and organizations who pay for or procure the product
-- **USERS** (outside + purpose) — people who directly use and interact with the product
-- **MOTIVATIONS** (outside + purpose) — needs, desires, and jobs-to-be-done that drive users and customers
+- **GOALS** — what the organization wants to achieve with this product
+- **DRIVERS** — the people and teams inside the organization pushing the product forward
+- **ENABLERS** — the assets, skills, and know-how the organization can draw on
+- **PRODUCTION** — the processes and systems that build the product
+- **DISTRIBUTION** — the channels that get the product to customers
+- **CUSTOMERS** — the people and organizations who pay for the product
+- **USERS** — the people who actually use the product
+- **MOTIVATIONS** — the needs and desires that drive users and customers
 
-The context zone forms the outermost ring of the canvas. The context of an innovation determines its chances of success.
+These form the outer ring. The context is what determines whether a product succeeds or fails — a great value proposition in the wrong context still fails.
 
-### Layer Relationships
+### How the Layers Relate
 
-Center, core, and context are mutually exclusive and complementary. Every fact about a product innovation belongs to exactly one aspect in exactly one layer. The layers interact through the relational grammar described in `relations.md`.
+Every fact about a product belongs to exactly one aspect. The core defines what the product promises; the context determines whether that promise can be kept. The grammar connecting them is in `relations.md`.
 
-## Four Elements (Corners)
+## Four Corners
 
-The aspects can be aggregated into four elements, each occupying one quadrant of the canvas. Each element represents a distinct dimension of innovation.
+The canvas groups naturally into four corners. Each corner tells a different part of the product's story.
 
 ### IDEA (top-left: inside + purpose)
 
-The internal vision and ambition behind the product.
+Why we're doing this. The vision, ambition, and what makes it worth pursuing.
 
-- Context aspects: GOALS, DRIVERS
-- Core aspect: uniqueness
-- Validation quality: **Viability** — does the product express a practical business idea?
+- Includes: GOALS, DRIVERS, uniqueness
+- Tests for: **Viability** — is this a practical business idea?
 
 ### VALUE (top-right: outside + purpose)
 
-The external demand and user need the product addresses.
+Who needs this and why. The demand side — real people with real problems.
 
-- Context aspects: USERS, MOTIVATIONS
-- Core aspect: problem
-- Validation quality: **Desirability** — does the product create real user value?
+- Includes: USERS, MOTIVATIONS, problem
+- Tests for: **Desirability** — does this create real value for users?
 
 ### RESOURCES (bottom-left: inside + implementation)
 
-The internal capabilities and execution capacity.
+What we can build and how. The capabilities and execution machinery.
 
-- Context aspects: ENABLERS, PRODUCTION
-- Core aspect: solution
-- Validation quality: **Feasibility** — can the product be realized with available resources?
+- Includes: ENABLERS, PRODUCTION, solution
+- Tests for: **Feasibility** — can we actually build this?
 
 ### MARKET (bottom-right: outside + implementation)
 
-The external landscape of distribution and competition.
+How we reach people and what we're up against. Distribution, customers, competition.
 
-- Context aspects: DISTRIBUTION, CUSTOMERS
-- Core aspect: alternatives
-- Validation quality: **Marketability** — is there a sufficiently large and addressable market?
+- Includes: DISTRIBUTION, CUSTOMERS, alternatives
+- Tests for: **Marketability** — can we reach enough people who'll switch?
 
 ## The Diagonal
 
-The fundamental movement of product innovation runs diagonally from **IDEA** (top-left) to **MARKET** (bottom-right). A product begins as an internal vision driven by purpose and must ultimately reach an external market through implementation.
+The big journey of any product runs diagonally: from **IDEA** (top-left) to **MARKET** (bottom-right). You start with an internal vision driven by purpose, and you need to end up in an external market through implementation.
 
-This diagonal trajectory — from inside+purpose to outside+implementation — is the primary axis of progress. The force field analysis (see below) reveals what pushes a product along this trajectory and what holds it back.
+This is the main trajectory. The force field (below) shows what's pushing your product along this path and what's blocking it.
 
-The secondary diagonal runs from **RESOURCES** (bottom-left) to **VALUE** (top-right). Resources enable the creation of value; value justifies the investment of resources.
+The other diagonal — **RESOURCES** to **VALUE** — is the supporting axis. Your capabilities enable value; demonstrated value justifies further investment.
 
 ## Core/Context Fit
 
-A product innovation succeeds when its means and objectives (context) support the realization of its value proposition (core), and the product is successfully introduced to users and customers.
+A product works when its context (the people, capabilities, and market around it) supports its core (what it promises). When the organization's goals align with user needs, when enablers match what the solution requires, when distribution reaches the right customers — that's core/context fit.
 
-This fit between core and context is validated using the Product Field's grammar — four sentence templates that connect aspects through each element. When these sentences hold empirically, the innovation has core/context fit. See `relations.md` for the full grammar and validation templates.
-
-The four validation qualities — desirability, viability, feasibility, marketability — correspond to the four elements and together describe the overall health of a product innovation.
+You test this with four sentences, one per corner, that chain the aspects together. If the sentences make sense and hold up against evidence, you have fit. If they break down, you know exactly where the gap is. The sentences are in `relations.md`.
 
 ## Force Field
 
-Once strengths and weaknesses of a product's context are identified through evaluation, their combined effect can be visualized as a force field along the introduction dimension (inside → outside).
+Once you've identified what's strong and weak about your product's context, you can see how these forces combine along the inside→outside axis:
 
-Forces can:
-- **Push** the product from inside to outside (strengths that propel introduction)
-- **Pull** the product from outside (demand or market forces that attract the product)
-- **Hold back** (weaknesses, gaps, or counterproductive forces that impede progress)
+- **Push** forces propel the product outward (strong drivers, clear goals, solid production)
+- **Pull** forces attract the product from outside (user demand, market opportunity, customer willingness)
+- **Drag** forces hold the product back (missing enablers, weak distribution, unclear problem)
 
-Patterns of counterproductive forces mark the points with the highest risk of failure. Steering product innovation means alleviating these risks while leveraging existing strengths to amplify positive forces.
-
-An advanced state of innovation with a high probability of success is represented by a steady flow from left to right — from inside to outside.
+Where drag forces cluster, that's your highest risk. Where push and pull align, that's your momentum. A healthy product shows a clear flow from inside to outside.
 
 ## Character Types
 
-The character of a product innovation is defined by the relative contribution of each of its four elements. When one element dominates, the innovation exhibits a recognizable type:
+Every product has a character — defined by which corner contributes most to its success. When one corner clearly dominates:
 
-- **Idea Push** — strongest in IDEA. Strong drivers with clear goals and distinctive uniqueness push the idea from inside toward users and customers. Needs a driver with power over enablers and a clear purpose.
-- **Value Pull** — strongest in VALUE. Deep understanding of users, motivations, and needs pulls toward usage of the product. Purpose is turning satisfied users into paying customers.
-- **Resources Push** — strongest in RESOURCES. Strong enablers empower production to build a solution, pushing from resources to users and customers. Implementation capability drives innovation.
-- **Market Pull** — strongest in MARKET. Finding and reaching customers, scaling distribution, and outcompeting alternatives pulls toward market adoption. Distribution power drives adoption.
+- **Idea Push** — driven by strong internal vision. Clear goals, passionate drivers, distinctive uniqueness. The idea itself creates momentum. Risk: building something nobody asked for.
+- **Value Pull** — driven by deep understanding of users. Strong problem-market fit pulls the product toward adoption. Risk: knowing what to build but struggling to build or distribute it.
+- **Resources Push** — driven by strong capabilities. Powerful enablers and production push a solution into the world. Risk: a solution looking for a problem.
+- **Market Pull** — driven by distribution and customer access. Strong channels and customer relationships pull the product to market. Risk: competing on distribution rather than value.
 
-Most real innovations are blends. The character type indicates where the primary energy comes from, and where attention may need to be redirected.
+Most products are blends. The character tells you where your energy comes from and where you might be neglecting.
 
-## The Meta-Method Principle
+## Working With Other Methods
 
-The Product Field does not prescribe how to gather insights. It is a meta-method — a geographic structure that tells you where insights are needed and how they connect.
+The Product Field doesn't replace other product methods — it shows you where they fit. It's a map that tells you which region needs attention, and established methods are the tools you use to explore that region:
 
-Established methods each illuminate specific regions of the field:
-- JTBD illuminates the VALUE corner (users, motivations, problem)
-- Lean Canvas maps across multiple aspects with emphasis on problem and solution
+- JTBD is great for the VALUE corner (understanding users, motivations, and the problem)
+- Lean Canvas touches many areas, especially problem and solution
 - Design Thinking focuses on desirability (VALUE) and feasibility (RESOURCES)
-- Business Model Canvas spans the full field with emphasis on MARKET and RESOURCES
+- Business Model Canvas spans the whole field with emphasis on MARKET and RESOURCES
 
-When the Check or Find steps reveal a gap, the position of the gap on the canvas tells you which method to reach for. See `methods.md` for the method library mapped to PF regions.
+When a gap appears on the canvas, its position tells you which method to reach for. See `methods.md` for the full mapping.
 
 ## Workflow
 
-The Product Field provides a four-step workflow for systematically working with the model:
+Four steps, each building on the last:
 
-1. **Frame** — establish shared understanding of the model's structure and vocabulary
-2. **Map** — gather and organize facts about the product innovation onto the canvas
-3. **Check** — validate consistency and core/context fit using the relational grammar
-4. **Find** — evaluate strengths and weaknesses, generate the force field, determine character
+1. **Frame** — get oriented. Understand the map and agree on vocabulary.
+2. **Map** — fill in what you know. Gather facts about each aspect, tag what's verified vs. assumed.
+3. **Check** — test consistency. Do the pieces fit together? Run the validation sentences.
+4. **Find** — evaluate. What's strong, what's weak? Where's the force field pushing, where is it dragging?
 
-These steps are not strictly sequential. You can revisit any step as understanding deepens. The canvas is a living document that evolves through iterative exploration.
+These aren't strictly sequential — you'll loop back as you learn more. The canvas evolves.
 
 ---
 
-*The Product Field is by Klaus-Peter Frahm, Michael Schieben, and Wolfgang Wopperer-Beholz. The model structure is licensed CC BY-SA 4.0. This reference file contains original content informed by and building on the Product Field framework.*
+*The Product Field is by Klaus-Peter Frahm, Michael Schieben, and Wolfgang Wopperer-Beholz. The model structure is licensed CC BY-SA 4.0. This reference file contains original content building on the Product Field framework.*
