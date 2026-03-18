@@ -2,6 +2,10 @@
 name: pf:new
 description: Create a new product canvas and register it in the backlog
 argument-hint: "<product-name>"
+allowed-tools:
+  - Read
+  - Write
+  - Glob
 ---
 
 <context>

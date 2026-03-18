@@ -2,6 +2,9 @@
 name: pf:status
 description: Portfolio dashboard — read-only view of all products
 argument-hint: ""
+allowed-tools:
+  - Read
+  - Glob
 ---
 
 <objective>

@@ -2,6 +2,9 @@
 name: pf:find
 description: Evaluate strengths and weaknesses, generate force field, determine character
 argument-hint: "<product-name>"
+allowed-tools:
+  - Read
+  - Write
 ---
 
 <context>

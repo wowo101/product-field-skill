@@ -2,6 +2,11 @@
 name: pf:import
 description: Ingest existing material and map it onto a Product Field canvas
 argument-hint: "<product-name> [path|glob]"
+allowed-tools:
+  - Read
+  - Write
+  - Glob
+  - Grep
 ---
 
 <context>

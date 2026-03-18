@@ -2,6 +2,9 @@
 name: pf:audit
 description: Check aspect placement — catch facts in the wrong area
 argument-hint: "<product-name>"
+allowed-tools:
+  - Read
+  - Write
 ---
 
 <context>

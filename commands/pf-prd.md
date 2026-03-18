@@ -2,6 +2,9 @@
 name: pf:prd
 description: Derive a Product Requirements Document from a validated canvas
 argument-hint: "<product-name>"
+allowed-tools:
+  - Read
+  - Write
 ---
 
 <context>

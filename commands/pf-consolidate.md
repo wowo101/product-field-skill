@@ -2,6 +2,9 @@
 name: pf:consolidate
 description: Capture insights from conversation into the canvas
 argument-hint: "<product-name>"
+allowed-tools:
+  - Read
+  - Write
 ---
 
 <context>

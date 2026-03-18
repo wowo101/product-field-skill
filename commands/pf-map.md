@@ -2,6 +2,9 @@
 name: pf:map
 description: Guided adaptive questioning to fill in a product canvas
 argument-hint: "<product-name> [aspect]"
+allowed-tools:
+  - Read
+  - Write
 ---
 
 <context>

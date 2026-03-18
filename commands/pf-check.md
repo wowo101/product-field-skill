@@ -2,6 +2,9 @@
 name: pf:check
 description: Validate consistency and core/context fit using the relational grammar
 argument-hint: "<product-name>"
+allowed-tools:
+  - Read
+  - Write
 ---
 
 <context>
