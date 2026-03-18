@@ -15,15 +15,15 @@ Ordered list of work items for the product-field plugin.
 9. ~~Write `templates/find.md` — evaluation + force field template~~
 10. ~~Write `templates/prd.md` — PRD template~~
 11. ~~Write `templates/claude-md-snippet.md` — CLAUDE.md section for adopting projects~~
-12. Write command: `/pf:new`
-13. Write command: `/pf:import`
-14. Write command: `/pf:map`
-15. Write command: `/pf:audit`
-16. Write command: `/pf:check`
-17. Write command: `/pf:find`
-18. Write command: `/pf:prd`
-19. Write command: `/pf:status`
-20. Write command: `/pf:consolidate`
+12. ~~Write command: `/pf:new`~~
+13. ~~Write command: `/pf:import`~~
+14. ~~Write command: `/pf:map`~~
+15. ~~Write command: `/pf:audit`~~
+16. ~~Write command: `/pf:check`~~
+17. ~~Write command: `/pf:find`~~
+18. ~~Write command: `/pf:prd`~~
+19. ~~Write command: `/pf:status`~~
+20. ~~Write command: `/pf:consolidate`~~
 21. ~~Write `README.md` — install instructions, overview, attribution~~
 22. Test: use plugin on first IDS product canvas (dogfood)
 23. Refactor IDS products repo CLAUDE.md to use plugin (slim down, reference framework)
