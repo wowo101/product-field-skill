@@ -9,12 +9,12 @@ Ordered list of work items for the product-field plugin.
 3. ~~Write `reference/model.md` — geographic model, axes, diagonal, corners, layers~~
 4. ~~Write `reference/aspects.md` — 12 aspects with definitions, positions, think-about prompts, guiding questions~~
 5. ~~Write `reference/relations.md` — circular grammar, context-core links, 4 validation sentence templates~~
-6. Write `reference/methods.md` — starter method library mapped to PF quadrants
-7. Write `templates/canvas.md` — blank canvas with epistemic status tags, primary/supporting structure
-8. Write `templates/check.md` — validation worksheet
-9. Write `templates/find.md` — evaluation + force field template
-10. Write `templates/prd.md` — PRD template
-11. Write `templates/claude-md-snippet.md` — CLAUDE.md section for adopting projects
+6. ~~Write `reference/methods.md` — starter method library mapped to PF quadrants~~
+7. ~~Write `templates/canvas.md` — blank canvas with epistemic status tags, primary/supporting structure~~
+8. ~~Write `templates/check.md` — validation worksheet~~
+9. ~~Write `templates/find.md` — evaluation + force field template~~
+10. ~~Write `templates/prd.md` — PRD template~~
+11. ~~Write `templates/claude-md-snippet.md` — CLAUDE.md section for adopting projects~~
 12. Write command: `/pf:new`
 13. Write command: `/pf:import`
 14. Write command: `/pf:map`
