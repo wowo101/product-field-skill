@@ -55,9 +55,13 @@ The plugin operates on a products repo — one per company/organization:
       prd.md             # Product requirements (output)
 ```
 
+## License
+
+The plugin is licensed under a CC BY-SA 4.0 license.
+
 ## Attribution
 
-The Product Field is by Klaus-Peter Frahm, Michael Schieben, and Wolfgang Wopperer-Beholz. The Product Field model is licensed CC BY-SA 4.0. This plugin contains original content building on the Product Field framework.
+The Product Field has been created by Klaus-Peter Frahm, Michael Schieben, and Wolfgang Wopperer-Beholz. The Product Field model is licensed under a CC BY-SA 4.0 license. This plugin contains original content building on the Product Field framework.
 
 ## Status
 
