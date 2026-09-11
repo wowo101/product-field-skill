@@ -1,8 +1,8 @@
 # Product Field — Claude Code Plugin
 
-A Claude Code plugin that brings the [Product Field](https://productfield.com) framework to AI-assisted product thinking.
+A Claude Code plugin that brings the [Product Field](https://productfield.com) framework to AI-assisted product thinking, created by Mark Jäger. 
 
-The Product Field (Frahm, Schieben, Wopperer-Beholz) treats product innovation as a complex adaptive system. It provides a geographic model — a 2D coordinate system where spatial position encodes meaning — and a structured workflow for exploring, validating, and evaluating product ideas.
+The Product Field (Frahm, Schieben, Wopperer) treats product innovation as a complex adaptive system. It provides a spatial model — a 2D coordinate system where spatial position encodes meaning — and a structured workflow for exploring, validating, and evaluating product ideas.
 
 This plugin makes the Product Field operational in Claude Code: structured commands for each workflow step, reference files for the domain model, and templates for product canvases and deliverables.
 
@@ -61,7 +61,7 @@ The plugin is licensed under a CC BY-SA 4.0 license.
 
 ## Attribution
 
-The Product Field has been created by Klaus-Peter Frahm, Michael Schieben, and Wolfgang Wopperer-Beholz. The Product Field model is licensed under a CC BY-SA 4.0 license. This plugin contains original content building on the Product Field framework.
+The Product Field has been created by Klaus-Peter Frahm, Michael Schieben, and Wolfgang Wopperer. The Product Field model is licensed under a CC BY-SA 4.0 license. This plugin contains original content building on the Product Field framework.
 
 ## Status
 
